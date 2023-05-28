@@ -1,0 +1,45 @@
+# Collaborative Working using Git
+
+- Prerequisites
+    1. Github: 
+        - Harus punya repository
+    2. Local Computer:
+        - Folder sudah terintegrasi dengan git
+            - fatal: not a git repository (or any of the parent directories): .git (belum terintegrasi)
+            - Jalankan command `git init`
+            - Kalau sudah terintegrasi ada folder namanya `.git` dan kalau kita ketik `git status` tidak tampil error diatas
+        - Folder sudah ada remote repository
+            - Contoh alamat repository: `https://github.com/ramadnsyh/belajar-github-batch32.git`
+            - Check apakah sudah ada alamat `git remote -v`
+            - Daftarkan alamat: `git remote add origin https://github.com/ramadnsyh/belajar-github-batch32.git`
+            - Delete alamat: `git remote remove origin`
+            
+- Push (Upload Files): Local Computer -> Github
+    - Untracked Files: segala perubahan seperti (insert, update, delete)
+    - Tracked Files: setelah kita gunakan `git add <nama file> <nama file>` atau `git add .`
+    - Commited Files: `git commit -m "add main and predict script"`
+    - Push Files: `git push origin master`
+    
+    
+- Fetch:
+    - Pull: Git pull origin master -> update files paling baru direpository
+    - Clone: git clone <alamat repository> -> ambil semua di repository
+        - .git
+        - remote repository
+        - files
+        
+- Conflict:
+    Penyebab: commit history gak sama antara remote repository dan local computer
+    
+- Branch
+    - Tujuan: meminimalisir risiko
+    - Cara:
+        - `git branch` -> list branch
+        - `git branch <nama branch>` -> buat branch baru
+        - `git checkout <nama branch>` -> pindah ke branch baru
+        - `git checkout -b <nama branch>` -> buat + pindah ke branch baru
+        
+- Pull Request: gabungkan code dari 2 branch yg berbeda
+    
+    
+        
